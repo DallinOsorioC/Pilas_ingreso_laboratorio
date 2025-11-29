@@ -12,8 +12,9 @@ internal class Program
         ingreso.Push(new Ingreso() { Idtrabajador = 101, ZonaIngresada = "Zona Esterilización", HoraIngreso = "08:20" });
         ingreso.Push(new Ingreso() { Idtrabajador = 309, ZonaIngresada = "Zona Química", HoraIngreso = "08:25" });
 
-        ingreso.Pop();
-       Console.WriteLine("Elementos de la pila:\n");
+        Console.WriteLine($"El trabajador { ingreso.Pop()} sale de la zona");
+       
+        Console.WriteLine("\nElementos de la pila:\n");
         //mostrar elementos de la pila
         while (!ingreso.IsEmpty())
         {
